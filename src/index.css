@@ -1,0 +1,58 @@
+body {
+  margin: 0;
+  background-color: #0d0d0d;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.app {
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.start-button,
+.target-button {
+  padding: 1rem 2rem;
+  font-size: 1.5rem;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  transition: top 0.2s, left 0.2s;
+}
+
+.neon {
+  background-color: transparent;
+  color: #00ffff;
+  border: 2px solid #00ffff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px #00ffff, 0 0 20px #00ffff inset;
+}
+
+.neon:hover {
+  box-shadow: 0 0 20px #00ffff, 0 0 30px #00ffff inset;
+}
+
+.neon-text {
+  color: #00ffff;
+  text-shadow: 0 0 10px #00ffff;
+  font-size: 2rem;
+  position: absolute;
+  top: 10px;
+}
+
+.timer {
+  position: absolute;
+  top: 50px;
+}
+
+.end-screen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
